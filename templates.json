@@ -70,26 +70,7 @@
       "3306/tcp"
     ],
     "volumes": ["/var/lib/mysql"]
-  },
-  {
-    "type": "container",
-    "title": "MySQL2",
-    "description": "The most popular open-source database",
-    "categories": ["database"],
-    "platform": "linux",
-    "logo": "https://portainer.io/images/logos/mysql.png",
-    "image": "mysql:latest",
-    "env": [
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "Root password"
-      }
-    ],
-    "ports": [
-      "3306/tcp"
-    ],
-    "volumes": ["/var/lib/mysql"]
-  },
+  },  
   {
     "type": "container",
     "title": "MariaDB",
@@ -426,6 +407,30 @@
     "ports": [
       "21/tcp", "80/tcp", "443/tcp", "8880/tcp", "8443/tcp", "8447/tcp"
     ]
+  },
+  {
+    "type": "container",
+    "title": "PHP MyAdmin",
+    "description": "A web interface for MySQL and MariaDB.",
+    "categories": ["CMS"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/wordpress.png",
+    "image": "phpmyadmin/phpmyadmin:latest",
+    "env": [
+      {
+        "name": "PMA_HOST",
+        "label": "MySQL Server Container",
+        "type": "container"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root Password"
+      }
+    ],
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
   },
   {
     "type": "container",
