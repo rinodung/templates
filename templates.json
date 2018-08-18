@@ -425,7 +425,16 @@
       {
         "name": "MYSQL_ROOT_PASSWORD",
         "label": "Root Password"
+      },
+      {
+        "name": "MYSQL_USER",
+        "label": "Username"
+      },
+      {
+        "name": "MYSQL_PASSWORD",
+        "label": "Password"
       }
+      
     ],
     "ports": [
       "80/tcp"
