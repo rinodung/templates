@@ -457,6 +457,14 @@
       {
         "name": "JOOMLA_DB_PASSWORD",
         "label": "Database password"
+      },
+      {
+        "name": "JOOMLA_DB_NAME",
+        "label": "Database Name"
+      },     
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Domain Name"        
       }
     ],
     "ports": [
