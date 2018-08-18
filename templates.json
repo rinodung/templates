@@ -84,6 +84,12 @@
     "platform": "linux",
     "logo": "https://portainer.io/images/logos/drupal.png",
     "image": "drupal:latest",
+    "env": [          
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Domain Name"        
+      }
+    ],
     "ports": [
       "80/tcp"
     ],
