@@ -97,6 +97,27 @@
   },
   {
     "type": "container",
+    "title": "Magento",
+    "description": "Open-source e-commerce platform",
+    "categories": ["CMS"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/magento.png",
+    "image": "alankent/gsd:latest",
+    "env": [          
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Domain Name"        
+      }
+    ],
+    "ports": [
+      "80/tcp",
+      "3000/tcp",
+      "3001/tcp"
+    ],
+    "volumes": ["/var/www/html/"]
+  },
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],
@@ -503,22 +524,7 @@
       "8080/tcp"
     ],
     "volumes": ["/data"]
-  },
-  {
-    "type": "container",
-    "title": "Magento 2",
-    "description": "Open-source e-commerce platform",
-    "categories": ["CMS"],
-    "platform": "linux",
-    "logo": "https://portainer.io/images/logos/magento.png",
-    "image": "alankent/gsd:latest",
-    "ports": [
-      "80/tcp",
-      "3000/tcp",
-      "3001/tcp"
-    ],
-    "volumes": ["/var/www/html/"]
-  },
+  },  
   {
     "type": "container",
     "title": "Sematext Docker Agent",
