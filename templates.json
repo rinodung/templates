@@ -97,7 +97,7 @@
   },
   {
     "type": "container",
-    "title": "Magento",
+    "title": "Opencart",
     "description": "Open-source e-commerce platform",
     "categories": ["CMS"],
     "platform": "linux",
