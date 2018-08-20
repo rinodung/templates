@@ -136,7 +136,7 @@
       }, 
       {
         "name": "OPENCART_DATABASE_USER",
-        "label": "Database password"
+        "label": "Database User"
       },
       {
         "name": "OPENCART_DATABASE_PASSWORD",
