@@ -97,30 +97,13 @@
   },
   {
     "type": "container",
-    "title": "Opencart",
+    "title": "Magento",
     "description": "Open-source e-commerce platform",
     "categories": ["CMS"],
     "platform": "linux",
-    "logo": "https://www.opencart.com/application/view/image/icon/opencart-logo.png",
-    "image": "bitnami/opencart:latest",
+    "logo": "https://portainer.io/images/logos/magento.png",
+    "image": "alankent/gsd:latest",
     "env": [          
-       {
-        "name": "MARIADB_HOST",
-        "label": "MySQL database host",
-        "type": "container"
-      },
-      {
-        "name": "OPENCART_DATABASE_USER",
-        "label": "Database password"
-      },
-      {
-        "name": "OPENCART_DATABASE_PASSWORD",
-        "label": "Database password"
-      },
-      {
-        "name": "OPENCART_DATABASE_NAME",
-        "label": "Database Name"
-      },     
       {
         "name": "VIRTUAL_HOST",
         "label": "Domain Name"        
@@ -136,32 +119,29 @@
   {
     "type": "container",
     "title": "Opencart",
-    "description": "itnami Docker Image for OpenCart!",
+    "description": "Bitnami Docker Image for OpenCart!",
     "categories": ["CMS"],
     "platform": "linux",
-    "logo": "https://portainer.io/images/logos/mysql.png",
-    "image": "phpmyadmin/phpmyadmin:latest",
+    "logo": "https://www.opencart.com/application/view/image/icon/opencart-logo.png",
+    "image": "bitnami/opencart:latest",
     "env": [
       {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "Root password"
+        "name": "MARIADB_HOST",
+        "label": "MySQL database host",
+        "type": "container"
+      },
+       {
+        "name": "OPENCART_DATABASE_NAME",
+        "label": "Database Name"
+      }, 
+      {
+        "name": "OPENCART_DATABASE_USER",
+        "label": "Database password"
       },
       {
-        "name": "PMA_HOST",
-        "label": "Host"
-      },
-      {
-        "name": "PMA_PORT",
-        "label": "Port"
-      },
-      {
-        "name": "MYSQL_USER",
-        "label": "Username"
-      },
-      {
-        "name": "MYSQL_PASSWORD",
-        "label": "Password"
-      },
+        "name": "OPENCART_DATABASE_PASSWORD",
+        "label": "Database password"
+      },         
       {
         "name": "VIRTUAL_HOST",
         "label": "Domain Name"        
@@ -170,7 +150,7 @@
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/var/lib/mysql"]
+    "volumes": ["/var/www/html/"]
   },  
   {
     "type": "container",
