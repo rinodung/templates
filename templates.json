@@ -136,6 +136,18 @@
       {
         "name": "PMA_PORT",
         "label": "Port"
+      },
+      {
+        "name": "MYSQL_USER",
+        "label": "Username"
+      },
+      {
+        "name": "MYSQL_PASSWORD",
+        "label": "Password"
+      },
+      {
+        "name": "VIRTUAL_HOST",
+        "label": "Domain Name"        
       }
     ],
     "ports": [
