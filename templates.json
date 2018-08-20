@@ -118,6 +118,33 @@
   },
   {
     "type": "container",
+    "title": "PHPMyAdmin",
+    "description": "A web interface for MySQL and MariaDB.",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/mysql.png",
+    "image": "phpmyadmin/phpmyadmin:latest",
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root password"
+      },
+      {
+        "name": "PMA_HOST",
+        "label": "Host"
+      },
+      {
+        "name": "PMA_PORT",
+        "label": "Port"
+      }
+    ],
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/lib/mysql"]
+  },  
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],
